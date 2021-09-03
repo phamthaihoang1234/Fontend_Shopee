@@ -1,0 +1,38 @@
+:color {
+    --while-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+     /* sans-serif: chủng chữ không có chân để chờ nó tại fonts của roboto về khi chưa kịp tại về thì nó dùng chủng chữ sans-serif; */
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    /* giúp căn giữa cái thẻ chứa cái class con này  */
+    margin: 0 auto;
+}
+
+.grid_full-width {
+    width: 100%;
+}
+
+.grid_row {
+    /* giúp cho thẻ chứa class này thì đều nằm trên 1 hàng ngang do thuộc tính display : flex */
+    display: flex;
+    /* để cho những thằng con có độ dài vượt quá thằng grid row thì nó sẽ tự động nhảy xuống hàng  */
+    flex-wrap : wrap;
+}
+
+
+
